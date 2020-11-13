@@ -1,0 +1,2 @@
+# JUNO-VR
+スマホの方向センサを使う場合gameobjectのplayerのmobile Moveにチェックをし、その上のDive Mouse Lookのチェックを外すことで確認できます。
