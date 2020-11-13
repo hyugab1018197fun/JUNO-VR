@@ -38,18 +38,22 @@ public GameObject Player;
         float dir2_z=Mathf.Sin(y_angleDir)*Mathf.Cos(z_angleDir);
         var dir1=new Vector3(dir1_x,dir1_y,dir1_z);
         var dir2=new Vector3(dir2_x,dir2_y,dir2_z);
+        // 前進
         if (Input.GetKey(KeyCode.W))
         {
             PlayerTransform.transform.position += (dir1) * speed * Time.deltaTime;
         }
+        // 右移動
         if (Input.GetKey(KeyCode.A))
         {
             PlayerTransform.transform.position += (dir2) * speed * Time.deltaTime;
         }
+        // 左移動
         if (Input.GetKey(KeyCode.D))
         {
             PlayerTransform.transform.position += -(dir2) * speed * Time.deltaTime;
         }
+        // 後退
         if (Input.GetKey(KeyCode.S))
         {
             PlayerTransform.transform.position += -(dir1) * speed * Time.deltaTime;
